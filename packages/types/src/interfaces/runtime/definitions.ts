@@ -70,11 +70,15 @@ export default {
     H1024: '[u8; 128; H1024]',
     H2048: '[u8; 256; H2048]',
     Hash: 'H256',
+    ExtrinsicsRoot: {
+      hash: 'Hash',
+      commitment: 'Vec<u8>',
+    },
     Header: {
       parentHash: 'Hash',
       number: 'Compact<BlockNumber>',
       stateRoot: 'Hash',
-      extrinsicsRoot: 'Hash',
+      extrinsicsRoot: 'ExtrinsicsRoot',
       digest: 'Digest'
     },
     IndicesLookupSource: 'GenericLookupSource',

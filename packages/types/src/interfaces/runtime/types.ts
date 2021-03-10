@@ -81,6 +81,12 @@ export interface DigestItem extends Enum {
   readonly asPreRuntime: PreRuntime;
 }
 
+/** @name ExtrinsicsRoot */
+export interface ExtrinsicsRoot extends Struct {
+  readonly hash: Hash;
+  readonly commitment: Bytes;
+}
+
 /** @name ExtrinsicsWeight */
 export interface ExtrinsicsWeight extends Struct {
   readonly normal: Weight;
@@ -134,7 +140,7 @@ export interface Header extends Struct {
   readonly parentHash: Hash;
   readonly number: Compact<BlockNumber>;
   readonly stateRoot: Hash;
-  readonly extrinsicsRoot: Hash;
+  readonly extrinsicsRoot: ExtrinsicsRoot;
   readonly digest: Digest;
 }
 
