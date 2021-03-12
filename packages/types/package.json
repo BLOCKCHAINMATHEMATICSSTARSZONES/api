@@ -1,14 +1,14 @@
 {
-  "name": "@polkadot/types",
+  "name": "@maticnetwork/da-types",
   "version": "4.0.4-2",
   "type": "module",
-  "description": "Implementation of the Parity codec",
+  "description": "Implementation of the Parity codec for Matic's Data Availability Blockchain",
   "main": "index.js",
   "sideEffects": [
     "./detectPackage.js",
     "./detectPackage.cjs"
   ],
-  "author": "Jaco Greeff <jacogr@gmail.com>",
+  "author": "Anjan Roy <anjan.roy@matic.network>",
   "maintainers": [],
   "contributors": [],
   "license": "Apache-2.0",
